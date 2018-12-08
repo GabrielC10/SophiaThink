@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.classes.Controller">
+   <children>
+      <ImageView fx:id="img_view" fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagens/1523912932_Giph%203.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="1371.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagens/Dale.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="894.0" fitWidth="1283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagens/jui.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_jogar" layoutX="505.0" layoutY="517.0" mnemonicParsing="false" onMouseClicked="#jogarGame" prefHeight="31.0" prefWidth="270.0" text="Jogar" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.08" color="#d92904" height="32.5" radius="20.125" width="50.0" />
+         </effect>
+      </Button>
+      <Button fx:id="btn_opcoes" layoutX="539.0" layoutY="563.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="203.0" text="Opções" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.08" color="#d92e04" height="32.5" radius="20.125" width="50.0" />
+         </effect>
+      </Button>
+      <Button fx:id="btn_sair" layoutX="539.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#cancelar" prefHeight="31.0" prefWidth="203.0" text="Sair" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.08" color="#d94904" height="32.5" radius="20.125" width="50.0" />
+         </effect>
+      </Button>
+   </children>
+</Pane>

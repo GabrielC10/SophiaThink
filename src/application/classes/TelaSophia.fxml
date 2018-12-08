@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.classes.ControllerTEL">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagens/ajuda_sophia.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_ajudar" layoutX="1148.0" layoutY="513.0" mnemonicParsing="false" onMouseClicked="#jogar" prefHeight="35.0" prefWidth="114.0" text="Ajudar Sophia" />
+      <Button fx:id="btn_sair" layoutX="1021.0" layoutY="514.0" mnemonicParsing="false" onMouseClicked="#sair" prefHeight="35.0" prefWidth="114.0" text="Sair" />
+   </children>
+</Pane>

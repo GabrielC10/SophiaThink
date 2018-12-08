@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onInputMethodTextChanged="#atualizar" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.classes.ControllerEDIT">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="641.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagens/8c6941594c4fc8401528992a0b1eacc2.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="214.0" layoutX="47.0" layoutY="166.0" opacity="0.45" stroke="BLACK" strokeType="INSIDE" width="388.0" />
+      <Label layoutX="47.0" layoutY="63.0" text="Nome:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txt_nome" editable="false" layoutX="91.0" layoutY="59.0" prefHeight="25.0" prefWidth="213.0" promptText="your name" />
+      <Label layoutX="334.0" layoutY="63.0" text="Idade:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txt_idade" editable="false" layoutX="374.0" layoutY="59.0" prefHeight="25.0" prefWidth="65.0" promptText="your age" />
+      <Label layoutX="51.0" layoutY="93.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txt_email" editable="false" layoutX="91.0" layoutY="89.0" prefHeight="25.0" prefWidth="350.0" promptText="your email" />
+      <Button fx:id="btn_salvar" layoutX="446.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#salvar" text="Salvar" />
+      <Button fx:id="btn_cancelar" layoutX="510.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#cancelar" text="Cancelar" />
+      <CheckBox fx:id="btn_careca" disable="true" layoutX="74.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#desativarCr" prefHeight="35.0" prefWidth="101.0" text="Careca" textFill="WHITE" />
+      <CheckBox fx:id="btn_barba" disable="true" layoutX="74.0" layoutY="212.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Barba" textFill="WHITE" />
+      <CheckBox fx:id="btn_masculino" disable="true" layoutX="74.0" layoutY="237.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Masculino" textFill="WHITE" />
+      <TextField fx:id="txt_codeedit" layoutX="376.0" layoutY="124.0" onInputMethodTextChanged="#atualizar" prefHeight="25.0" prefWidth="65.0" promptText="code" />
+      <Label layoutX="330.0" layoutY="128.0" text="Código:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btn_atualizar" disable="true" layoutX="448.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#atualizar" text="Atualizar" visible="false" />
+      <CheckBox fx:id="btn_ansi" disable="true" layoutX="74.0" layoutY="270.0" mnemonicParsing="false" text="Cursa ANSI" textFill="WHITE" />
+      <CheckBox fx:id="btn_azuis" disable="true" layoutX="74.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#desativarAz" text="Olhos Azuis" textFill="WHITE" />
+      <CheckBox fx:id="btn_verdes" disable="true" layoutX="74.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#desativarVe" text="Olhos Verdes" textFill="WHITE" />
+      <CheckBox fx:id="btn_alto" disable="true" layoutX="74.0" layoutY="343.0" mnemonicParsing="false" text="É alto" textFill="WHITE" />
+      <CheckBox fx:id="btn_longo" disable="true" layoutX="182.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#desativarCb" text="Cabelo Longo" textFill="WHITE" />
+      <CheckBox fx:id="btn_professor" disable="true" layoutX="182.0" layoutY="221.0" mnemonicParsing="false" text="É Professor" textFill="WHITE" />
+      <CheckBox fx:id="btn_coordenador" disable="true" layoutX="182.0" layoutY="246.0" mnemonicParsing="false" text="É Coordenador" textFill="WHITE" />
+      <CheckBox fx:id="btn_trabalha" disable="true" layoutX="182.0" layoutY="270.0" mnemonicParsing="false" text="Trabalha" textFill="WHITE" />
+      <CheckBox fx:id="btn_branco" disable="true" layoutX="182.0" layoutY="294.0" mnemonicParsing="false" text="É branco" textFill="WHITE" />
+      <CheckBox fx:id="btn_oculos" disable="true" layoutX="182.0" layoutY="318.0" mnemonicParsing="false" text="Usa óculos" textFill="WHITE" />
+      <CheckBox fx:id="btn_segundop" disable="true" layoutX="182.0" layoutY="342.0" mnemonicParsing="false" text="Cursa 2° Período" textFill="WHITE" />
+      <CheckBox fx:id="btn_loiro" disable="true" layoutX="311.0" layoutY="197.0" mnemonicParsing="false" text="É loiro" textFill="WHITE" />
+      <CheckBox fx:id="btn_formou" disable="true" layoutX="311.0" layoutY="221.0" mnemonicParsing="false" text="Se formou" textFill="WHITE" />
+   </children>
+</Pane>

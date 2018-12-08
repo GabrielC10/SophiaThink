@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.classes.ControllerLOGIN">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3c3c3" height="32.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Label layoutX="169.0" layoutY="14.0" text="Login">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_Usuario" layoutX="75.0" layoutY="62.0" prefHeight="26.0" prefWidth="251.0" promptText="                             Usuário" />
+      <PasswordField fx:id="txt_Senha" layoutX="126.0" layoutY="96.0" promptText="               Senha" />
+      <Button fx:id="btn_entrar" layoutX="19.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#actionEntrar" prefHeight="25.0" prefWidth="56.0" text="Entrar" />
+      <Button fx:id="btn_sair" layoutX="320.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#executarSair" prefHeight="25.0" prefWidth="63.0" text="Sair" />
+   </children>
+</Pane>
